@@ -1,6 +1,6 @@
 using System;
 
-namespace ImageDistributor
+namespace ImageDistributor.Models
 {
     public class ConstantValues
     {
