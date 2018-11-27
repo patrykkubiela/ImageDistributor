@@ -9,3 +9,8 @@
 *.pdb
 *.cache
 project.razor.json
+./obj/project.assets.json
+./obj/Debug/*
+./bin/Debug/*
+*.props
+*.targets
