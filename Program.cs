@@ -1,4 +1,5 @@
 ﻿using System;
+using ImageDistributor.Converters;
 using ImageDistributor.Implementation;
 using ImageDistributor.Models;
 
@@ -20,6 +21,7 @@ namespace ImageDistributor
             
             var filesHandler = new FilesHandler(new ConstantValues(sourcePath, destinationPath));
             var filesInfo = filesHandler.WithdrawFilesInfo();
+            var filesInfoModels = filesInfo.ConvertToModels();
 
             Console.WriteLine("Push ENTER key to leave");
             Console.ReadLine();
